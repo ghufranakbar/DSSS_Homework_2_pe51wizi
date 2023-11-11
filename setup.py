@@ -29,9 +29,6 @@ setup(
     author='Muhammad Ghufran Akbar',
     zip_safe=False,
     packages=find_packages(include=['math_quiz', 'math_quiz.*']),
-    # install_requires=[
-    #     # List any dependencies your project might have
-    # ],
     entry_points={
         'console_scripts': [
             'math_quiz = math_quiz.math_quiz:main',
