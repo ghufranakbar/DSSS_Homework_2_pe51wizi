@@ -22,8 +22,6 @@ from setuptools import setup, find_packages
 #       packages=find_packages(include=['math_quiz','tests_math_quiz','math_quiz.*'])
 #       )
 
-from setuptools import setup, find_packages
-
 setup(
     name='math_quiz',
     version='1.0',
