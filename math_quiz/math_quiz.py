@@ -19,6 +19,15 @@ def calculate(n1, n2, o):
     else: answer = n1 * n2
     return problem, answer
 
+def userinput():
+    # This function validates if the answer is correct
+    try:
+        user_answer = input("Your answer: ")
+        return int(user_answer)
+    except ValueError:
+        print("Please enter a valid integer value only.")
+        return userinput()
+
 def math_quiz():
 
     """ This function inputs the answer from user and compares with the actual computed answer if its correct or not?
@@ -37,8 +46,8 @@ def math_quiz():
 
         PROBLEM, ANSWER = calculate(n1, n2, o)
         print(f"\nQuestion: {PROBLEM}")
-        useranswer = input("Your answer: ")
-        useranswer = int(useranswer)
+        
+        useranswer = userinput()
 
         if useranswer == ANSWER:
             print("Correct! You earned a point.")
